@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { MediaContainerComponent } from './components/media-container/media-container.component';
 
 
 
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'dashboard'
+  },
+  {
+    path: 'media',
+    component: MediaContainerComponent
   }
 ];
 
